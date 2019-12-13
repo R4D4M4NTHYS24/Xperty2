@@ -135,8 +135,8 @@ body{
         display: inline-table;
         /*margin-top: 11%;*/
         grid-area: form;      
-        background: rgba(255,255,255, .9);
-        padding: 3px;
+        background: rgba(255,255,255);
+       
         border-radius: 10px;
         
     }
@@ -239,8 +239,18 @@ body{
             background: rgba(255,255,255, .9);
             padding: 1px;
             border-radius: 10px;
-            
+                    
         }
+
+        .form2 input{
+          width: 50%;
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #dbdbe2;
+          border-radius: 5px;
+          box-sizing: border-box;
+          margin-bottom: 10px;
+      }
 
         .box{
             grid-area: box;  
