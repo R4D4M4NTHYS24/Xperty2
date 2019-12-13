@@ -14,7 +14,8 @@ body{
         display: grid;
         grid-template-columns: 1fr 1024px 1fr;
         grid-template-areas: "badge badge"
-                            "description description"                           
+                            "description description" 
+                            "box box"                                                                                 
                             "form form";                    
         grid-gap: 10px;
     }
@@ -28,6 +29,91 @@ body{
         max-width: 200px;
         
     }
+ 
+    .box{
+        grid-area: box;  
+        
+        width: 1024px;
+        height: 50px;
+      }
+
+      .container-4{
+        
+        overflow: hidden;
+        width: 1024px;
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+
+      .container-4 input#search{
+       
+        width: 1024px;
+        height: 50px;
+        background: #fff;
+        border: none;
+        font-size: 10pt;
+        float: left;
+        color: black;
+        padding-left: 15px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 10px;
+      }
+
+      .container-4 input#search::-webkit-input-placeholder {
+        
+        font-size: 16px;   
+        color: #65737e;
+     }
+      
+     .container-4 input#search:-moz-placeholder { /* Firefox 18- */
+        font-size: 16px;   
+        color: #65737e;  
+     }
+      
+     .container-4 input#search::-moz-placeholder {  /* Firefox 19+ */
+        font-size: 16px;   
+        color: #65737e;  
+     }
+      
+     .container-4 input#search:-ms-input-placeholder {  
+        font-size: 16px;   
+        color: #65737e;  
+     }
+
+     .container-4 button.icon{
+        -webkit-border-top-right-radius: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        -moz-border-radius-bottomright: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+       
+        border: none;
+        background: #4fa8fc;
+        height: 50px;
+        width: 50px;
+        color: #4fa8fc;
+        opacity: 0;
+        font-size: 10pt;
+       
+        -webkit-transition: all .55s ease;
+        -moz-transition: all .55s ease;
+        -ms-transition: all .55s ease;
+        -o-transition: all .55s ease;
+        transition: all .55s ease;
+      }
+
+      .container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+        outline: none;
+        opacity: 1;
+        margin-left: -50px;
+      }
+     
+      .container-4:hover button.icon:hover{
+        background: #ee680f;
+      }
+
     .title{
         grid-area: title;
         font-size: 36px;
@@ -47,10 +133,10 @@ body{
 
     .form2{
         display: inline-table;
-        margin-top: 11%;
+        /*margin-top: 11%;*/
         grid-area: form;      
         background: rgba(255,255,255, .9);
-        padding: 1.5em;
+        padding: 3px;
         border-radius: 10px;
         
     }
@@ -133,6 +219,7 @@ body{
             grid-template-columns: 200px 1fr;
             grid-template-areas: "badge badge"
                          "description description"
+                         "box box"
                          "form form";
                          
                                   
@@ -147,12 +234,96 @@ body{
 
         .form2{
             display: inline-table;
-            margin-top: 23%;
+           
             grid-area: form;      
             background: rgba(255,255,255, .9);
-            padding: 1.5em;
+            padding: 1px;
             border-radius: 10px;
             
         }
+
+        .box{
+            grid-area: box;  
+            
+            width: 200px;
+            height: 50px;
+          }
+        
+          .container-4{
+        
+            overflow: hidden;
+            width: 465px;
+            vertical-align: middle;
+            white-space: nowrap;
+          }
+          
+          .container-4 input#search{
+       
+            width: 465px;
+            height: 50px;
+            background: #fff;
+            border: none;
+            font-size: 10pt;
+            float: left;
+            color: black;
+            padding-left: 15px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 10px;
+          }
+    
+          .container-4 input#search::-webkit-input-placeholder {
+            
+            font-size: 16px;   
+            color: #65737e;
+         }
+          
+         .container-4 input#search:-moz-placeholder { /* Firefox 18- */
+            font-size: 16px;   
+            color: #65737e;  
+         }
+          
+         .container-4 input#search::-moz-placeholder {  /* Firefox 19+ */
+            font-size: 16px;   
+            color: #65737e;  
+         }
+          
+         .container-4 input#search:-ms-input-placeholder {  
+            font-size: 16px;   
+            color: #65737e;  
+         }
+    
+         .container-4 button.icon{
+            -webkit-border-top-right-radius: 5px;
+            -webkit-border-bottom-right-radius: 5px;
+            -moz-border-radius-topright: 5px;
+            -moz-border-radius-bottomright: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+           
+            border: none;
+            background: #4fa8fc;
+            height: 50px;
+            width: 50px;
+            color: #4fa8fc;
+            opacity: 0;
+            font-size: 10pt;
+           
+            -webkit-transition: all .55s ease;
+            -moz-transition: all .55s ease;
+            -ms-transition: all .55s ease;
+            -o-transition: all .55s ease;
+            transition: all .55s ease;
+          }
+    
+          .container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+            outline: none;
+            opacity: 1;
+            margin-left: -50px;
+          }
+         
+          .container-4:hover button.icon:hover{
+            background: #ee680f;
+          }
 
     }
